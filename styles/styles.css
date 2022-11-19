@@ -77,18 +77,6 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     display:none;
 }
 
-.active{
-    background-color: rgb(255, 239, 239);
-    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
-    border-radius: 2px;
-}
-
-.show .active, .collapsing .active{
-    background-color: white;
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);;
-    border-radius: 0px;
-    font-weight: 500;
-}
 
 /*FOOTER*/
 .footer {
@@ -381,6 +369,9 @@ h2, p{
 }
 
 .descripcion{
+    font-family: source sans pro;
+    font-weight: 700;
+    font-size: 16px;
     text-align: justify;
     grid-area: descripcion;
 }
@@ -388,22 +379,26 @@ h2, p{
 
 /*PAGINA NEW ARRIVAL Y COLECCIONES ------------------------------------------------------------*/
 
-
 .contenedorCards {
     display: grid;
     position: relative;
     top: 95px;
-    width: 360px;
+    width: 380px;
     margin: 0 auto;
-    grid-template-columns:15px 150px 150px 15px;
-    grid-template-rows: 30px 210px 210px 210px 210px 50px;
-    gap:10px;
-    grid-template-areas: "titulo titulo titulo titulo"
-        "paddingleft card1 card2 paddingright"
-        "paddingleft card3 card4 paddingright"
-        "paddingleft card5 card6 paddingright"
-        "paddingleft card7 card8 paddingright"
-        "paddingleft vacio1 vacio1 paddingright";
+    padding: 0 20px;
+    gap: 10px;
+    grid-template-columns:165px 165px;
+    grid-template-rows: 30px 245px 245px 245px 245px 245px 245px 245px 245px 50px;
+    grid-template-areas: "titulo titulo"
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+        "card9 card10"
+        "card11 card12"
+        "card13 card14"
+        "card15 card16"
+        "vacio1 vacio1";
 }
 
 .tituloNewArrival {
@@ -411,15 +406,35 @@ h2, p{
     margin: auto;
 }
 
+
+
+.tituloCard1, .tituloCard2, .tituloCard3, .tituloCard4, .tituloCard5, .tituloCard6, .tituloCard7, .tituloCard8, .tituloCard9, .tituloCard10, .tituloCard11, .tituloCard12, .tituloCard13, .tituloCard14, .tituloCard15, .tituloCard16{
+    font-size: 18px;
+    margin:auto;
+}
+
+.precioCard1, .precioCard2, .precioCard3, .precioCard4, .precioCard5, .precioCard6, .precioCard7, .precioCard8, .precioCard9, .precioCard10, .precioCard11, .precioCard12, .precioCard13, .precioCard14, .precioCard15, .precioCard16{
+    font-size: 15px;
+    margin:auto;
+}
+
+.imagenCard1, .imagenCard2, .imagenCard3, .imagenCard4, .imagenCard5, .imagenCard6, .imagenCard7, .imagenCard8, .imagenCard9, .imagenCard10, .imagenCard11, .imagenCard12, .imagenCard13, .imagenCard14, .imagenCard15, .imagenCard16{
+    width:100%;
+}
+
 .card {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 30px 30px;
+    grid-template-rows: 165px 40px 40px;
     border: 1px solid black;
     border-radius: 3px;
+    font-size: 9px;
+    text-decoration: none;
 }
 
-
+.card:visited{
+    color:black;
+}
 
 
 .card1 {
@@ -430,17 +445,12 @@ h2, p{
 }
 
 .imagenCard1{
-    width:100%;
     grid-area: foto1;
 }
-
 .tituloCard1{
-    margin:auto;
     grid-area: titulo1;
 }
-
 .precioCard1{
-    margin:auto;
     grid-area: precio1;
 }
 
@@ -452,17 +462,12 @@ h2, p{
 }
 
 .imagenCard2{
-    width:100%;
     grid-area: foto2;
 }
-
 .tituloCard2{
-    margin:auto;
     grid-area: titulo2;
 }
-
 .precioCard2{
-    margin:auto;
     grid-area: precio2;
 }
 
@@ -472,19 +477,13 @@ h2, p{
                          "precio3";
     grid-area: card3;
 }
-
 .imagenCard3{
-    width:100%;
     grid-area: foto3;
 }
-
 .tituloCard3{
-    margin:auto;
     grid-area: titulo3;
 }
-
 .precioCard3{
-    margin:auto;
     grid-area: precio3;
 }
 
@@ -496,17 +495,12 @@ h2, p{
 }
 
 .imagenCard4{
-    width:100%;
     grid-area: foto4;
 }
-
 .tituloCard4{
-    margin:auto;
     grid-area: titulo4;
 }
-
 .precioCard4{
-    margin:auto;
     grid-area: precio4;
 }
 
@@ -518,17 +512,12 @@ h2, p{
 }
 
 .imagenCard5{
-    width:100%;
     grid-area: foto5;
 }
-
 .tituloCard5{
-    margin:auto;
     grid-area: titulo5;
 }
-
 .precioCard5{
-    margin:auto;
     grid-area: precio5;
 }
 
@@ -540,17 +529,12 @@ h2, p{
 }
 
 .imagenCard6{
-    width:100%;
     grid-area: foto6;
 }
-
 .tituloCard6{
-    margin:auto;
     grid-area: titulo6;
 }
-
 .precioCard6{
-    margin:auto;
     grid-area: precio6;
 }
 
@@ -562,17 +546,12 @@ h2, p{
 }
 
 .imagenCard7{
-    width:100%;
     grid-area: foto7;
 }
-
 .tituloCard7{
-    margin:auto;
     grid-area: titulo7;
 }
-
 .precioCard7{
-    margin:auto;
     grid-area: precio7;
 }
 
@@ -584,22 +563,16 @@ h2, p{
 }
 
 .imagenCard8{
-    width:100%;
     grid-area: foto8;
 }
-
 .tituloCard8{
-    margin:auto;
     grid-area: titulo8;
 }
-
 .precioCard8{
-    margin:auto;
     grid-area: precio8;
 }
 
 .card9{
-    display: none;
     grid-template-areas: "foto9"
                          "titulo9"   
                          "precio9";
@@ -607,22 +580,16 @@ h2, p{
 }
 
 .imagenCard9{
-    width:100%;
     grid-area: foto9;
 }
-
 .tituloCard9{
-    margin:auto;
     grid-area: titulo9;
 }
-
 .precioCard9{
-    margin:auto;
     grid-area: precio9;
 }
 
 .card10{
-    display: none;
     grid-template-areas: "foto10"
                          "titulo10"   
                          "precio10";
@@ -630,22 +597,16 @@ h2, p{
 }
 
 .imagenCard10{
-    width:100%;
     grid-area: foto10;
 }
-
 .tituloCard10{
-    margin:auto;
     grid-area: titulo10;
 }
-
 .precioCard10{
-    margin:auto;
     grid-area: precio10;
 }
 
 .card11{
-    display: none;
     grid-template-areas: "foto11"
                          "titulo11"   
                          "precio11";
@@ -653,22 +614,16 @@ h2, p{
 }
 
 .imagenCard11{
-    width:100%;
     grid-area: foto11;
 }
-
 .tituloCard11{
-    margin:auto;
     grid-area: titulo11;
 }
-
 .precioCard11{
-    margin:auto;
     grid-area: precio11;
 }
 
 .card12{
-    display: none;
     grid-template-areas: "foto12"
                          "titulo12"   
                          "precio12";
@@ -676,22 +631,16 @@ h2, p{
 }
 
 .imagenCard12{
-    width:100%;
     grid-area: foto12;
 }
-
 .tituloCard12{
-    margin:auto;
     grid-area: titulo12;
 }
-
 .precioCard12{
-    margin:auto;
     grid-area: precio12;
 }
 
 .card13{
-    display: none;
     grid-template-areas: "foto13"
                          "titulo13"   
                          "precio13";
@@ -699,22 +648,16 @@ h2, p{
 }
 
 .imagenCard13{
-    width:100%;
     grid-area: foto13;
 }
-
 .tituloCard13{
-    margin:auto;
     grid-area: titulo13;
 }
-
 .precioCard13{
-    margin:auto;
     grid-area: precio13;
 }
 
 .card14{
-    display: none;
     grid-template-areas: "foto14"
                          "titulo14"   
                          "precio14";
@@ -722,22 +665,16 @@ h2, p{
 }
 
 .imagenCard14{
-    width:100%;
     grid-area: foto14;
 }
-
 .tituloCard14{
-    margin:auto;
     grid-area: titulo14;
 }
-
 .precioCard14{
-    margin:auto;
     grid-area: precio14;
 }
 
 .card15{
-    display: none;
     grid-template-areas: "foto15"
                          "titulo15"   
                          "precio15";
@@ -745,22 +682,16 @@ h2, p{
 }
 
 .imagenCard15{
-    width:100%;
     grid-area: foto15;
 }
-
 .tituloCard15{
-    margin:auto;
     grid-area: titulo15;
 }
-
 .precioCard15{
-    margin:auto;
     grid-area: precio15;
 }
 
 .card16{
-    display: none;
     grid-template-areas: "foto16"
                          "titulo16"   
                          "precio16";
@@ -768,19 +699,17 @@ h2, p{
 }
 
 .imagenCard16{
-    width:100%;
     grid-area: foto16;
 }
-
 .tituloCard16{
-    margin:auto;
     grid-area: titulo16;
 }
-
 .precioCard16{
-    margin:auto;
     grid-area: precio16;
 }
+
+
+
 
 /*PAGINA ABOUT US------------------------------------------------------------------------------------------*/
 .mainAboutUs {
@@ -977,32 +906,22 @@ h2, p{
 
 /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
 .contenedorCards {
-    grid-template-columns:20px 150px 150px 150px 20px;
-    grid-template-rows: 30px 210px 210px 210px 210px 50px;
-    grid-template-areas: "titulo titulo titulo titulo titulo"
-        "paddingleft card1 card2 card3 paddingright"
-        "paddingleft card4 card5 card6 paddingright"
-        "paddingleft card7 card8 card9 paddingright"
-        "paddingleft card10 card11 card12 paddingright"
-        "paddingleft vacio1 vacio1 vacio1 paddingright";
-    width: 730px;
+    grid-template-columns:185px 185px 185px;
+    grid-template-rows: 30px 265px 265px 265px 265px 265px 265px 50px;
+    grid-template-areas: "titulo titulo titulo"
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card9"
+        "card10 card11 card12"
+        "card13 card14 card15"
+        "card16 vacio2 vacio2"
+        "vacio1 vacio1 vacio1";
+    width: 715px;
     gap:60px;
 }
 
-.card9{
-    display:grid;
-}
-
-.card10{
-    display:grid;
-}
-
-.card11{
-    display:grid;
-}
-
-.card12{
-    display:grid;
+.card {
+    grid-template-rows: 185px 40px 40px;
 }
 
 
@@ -1043,7 +962,9 @@ h2, p{
 }
 }
 
-
+.descripcion{
+    font-size: 22px;
+}
 
 @media screen and (min-width: 992px){
 /*MEDIA QUERY 3 DE HOME*/
@@ -1131,33 +1052,21 @@ h2, p{
         
 /*MEDIA QUERY 2 NEW ARRIVALS Y COLLECTIONS*/
 .contenedorCards {
-    grid-template-columns:20px 150px 150px 150px 150px 20px;
-    grid-template-rows: 30px 210px 210px 210px 210px 30px;
-    grid-template-areas: "titulo titulo titulo titulo titulo titulo"
-        "paddingleft card1 card2 card3 card4 paddingright"
-        "paddingleft card5 card6 card7 card8 paddingright"
-        "paddingleft card9 card10 card11 card12 paddingright"
-        "paddingleft card13 card14 card15 card16 paddingright"
-        "paddingleft vacio1 vacio1 vacio1 vacio1 paddingright";
-    width: 940px;
+    grid-template-columns:210px 210px 210px 210px;
+    grid-template-rows: 30px 310px 310px 310px 310px 30px;
+    grid-template-areas: "titulo titulo titulo titulo"
+        "card1 card2 card3 card4"
+        "card5 card6 card7 card8"
+        "card9 card10 card11 card12"
+        "card13 card14 card15 card16"
+        "vacio1 vacio1 vacio1 vacio1";
+    width: 1060px;
     gap:60px;
 }
     
     
-.card13{
-    display:grid;
-}
-
-.card14{
-    display:grid;
-}
-
-.card15{
-    display:grid;
-}
-
-.card16{
-    display:grid;
+.card {
+    grid-template-rows: 210px 50px 50px;
 }
 
 /*PRODUCTOS*/
