@@ -477,6 +477,7 @@ h2, p{
 
 .card {
     display: grid;
+    width:100%;
     grid-template-columns: 1fr;
     grid-template-rows: 165px 40px 40px;
     border: 1px solid black;
