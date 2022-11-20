@@ -40,6 +40,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     color: white;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 13px;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -78,7 +79,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 .carro{
     grid-area: carro;
     margin: auto 0;
-    height: 45px;
+    height: 37px;
     
 }
 
@@ -140,7 +141,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     width: 100%;
     margin: 0 auto;
     grid-template-columns: 15px 1fr 15px;
-    grid-template-rows: auto 100px auto 80px auto 80px auto 80px 0px 40px auto 15px auto 30px 150px 150px 40px 40px auto 40px;
+    grid-template-rows: auto 100px auto 80px auto 80px auto 80px 0px 40px auto 15px auto 40px 60px auto 40px auto 15px auto 15px auto 40px;
     gap: none;
     grid-template-areas: "paddingleft portada paddingright"
                          "paddingleft titulocolecciones paddingright"
@@ -156,12 +157,15 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
                          "paddingleft vacio2 paddingright"
                          "paddingleft parrafoNosotros2 paddingright"
                          "paddingleft vacio3 paddingright"
-                         "paddingleft imagencalidad paddingright"
-                         "paddingleft textocalidad paddingright"
-                         "paddingleft vacio4 paddingright"
                          "paddingleft ourCommunity paddingright"
                          "paddingleft fotosuso paddingright"
-                         "paddingleft vacio5 paddingright";
+                         "paddingleft vacio4 paddingright"
+                         "paddingleft imagenFundacion paddingright"
+                         "paddingleft vacio5 paddingright"
+                         "paddingleft textoFundacion1 paddingright"
+                         "paddingleft vacio6 paddingright"
+                         "paddingleft textoFundacion2 paddingright"
+                         "paddingleft vacio7 paddingright";
 
 }
 
@@ -186,7 +190,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 .titulocolecciones {
     font-size: 40px;
     text-align: center;
-    margin: 50px auto;
+    margin: 40px auto;
     grid-area: titulocolecciones;
 }
 
@@ -232,26 +236,57 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     color:black;
 }
 
-.textoCalidad {
+.imagenFundacion {
+    display:block;
+    margin:auto;
+    font-size: 24px;
+    width: 250px;
+    grid-area: imagenFundacion;
+}
+
+.textoFundacion1{
+    grid-area: textoFundacion1;
+}
+
+.textoFundacion2{
+    grid-area: textoFundacion2;
+}
+
+.textoFundacion1, .textoFundacion2 {
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:auto;
     text-align: center;
     font-size: 16px;
-    grid-area: textocalidad;
-}
-
-.imagenCalidad {
-    display:block;
-    margin:auto;
-    font-size: 24px;
-    width: 250px;
-    grid-area: imagencalidad;
+    font-weight: 700;
 }
 
 .ourCommunity{
     margin: auto;
     grid-area: ourCommunity;
+}
+
+.tituloNosotros{
+    grid-area: tituloNosotros;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.parrafoNosotros{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.parrafoNosotros1{
+    grid-area: parrafoNosotros1;
+}
+
+.parrafoNosotros2{
+    grid-area: parrafoNosotros2;
 }
 
 .sliderFotosdeUso {
@@ -298,28 +333,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     grid-area: fotosuso8;
 }
 
-.tituloNosotros{
-    grid-area: tituloNosotros;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
-}
 
-.parrafoNosotros{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    text-align: center;
-}
-
-.parrafoNosotros1{
-    grid-area: parrafoNosotros1;
-}
-
-.parrafoNosotros2{
-    grid-area: parrafoNosotros2;
-}
 
 
 /*PAGINA PRODUCTO--------------------------------------------------------------------------------*/
@@ -904,11 +918,18 @@ h2, p{
 .barramensaje {
     font-size: 18px;
 }
+
+.carro{
+    grid-area: carro;
+    margin: auto 0;
+    height: 41px;
     
+}
+
 /*CONTENEDOR GRID PARA LA SECCION MAIN DE LA HOME MOBILE*/
 .contenedorMain {
     grid-template-columns: 15px 1fr 1fr 15px;
-    grid-template-rows: auto 100px auto 80px auto 80px auto 80px 20px 140px 20px 50px 1fr 1fr 40px;
+    grid-template-rows: auto 100px auto 80px auto 80px auto 80px 0px auto auto 5px auto 40px 60px auto auto 40px auto 70px 50px;
     gap: 10px;
     grid-template-areas: "portada portada portada portada"
                          "paddingleft titulocolecciones titulocolecciones paddingright"
@@ -919,14 +940,31 @@ h2, p{
                          "paddingleft imagencoleccion3 imagencoleccion3 paddingright"
                          "paddingleft titulocoleccion3 titulocoleccion3 paddingright"
                          "paddingleft vacio1 vacio1 paddingright"
-                         "paddingleft imagencalidad textocalidad paddingright"
+                         "paddingleft tituloNosotros tituloNosotros paddingright"
+                         "paddingleft parrafoNosotros1 parrafoNosotros1 paddingright"
                          "paddingleft vacio2 vacio2 paddingright"
+                         "paddingleft parrafoNosotros2 parrafoNosotros2 paddingright"
+                         "paddingleft vacio3 vacio3 paddingright"
                          "paddingleft ourCommunity ourCommunity paddingright"
                          "paddingleft fotosuso1 fotosuso2 paddingright"
                          "paddingleft fotosuso3 fotosuso4 paddingright"
-                         "paddingleft vacio3 vacio3 paddingright"
+                         "paddingleft vacio5 vacio5 paddingright"
+                         "paddingleft imagenFundacion textoFundacion1 paddingright"
+                         "paddingleft imagenFundacion textoFundacion2 paddingright"
+                         "paddingleft vacio4 vacio4 paddingright"
 }
     
+
+
+
+
+
+
+
+
+
+
+
 .portadaMobile {
     display: none;
 }
@@ -1031,29 +1069,39 @@ h2, p{
     display:none
 }
 
+
 .carroDesktop{
     display: flex;
-    width:50px;
+    width:42px;
 }
 
 /*CONTENEDOR GRID PARA LA SECCION MAIN DE LA HOME MOBILE*/
 .contenedorMain {
     grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
-    grid-template-rows: auto 100px auto 40px 40px 150px 40px 50px 1fr 1fr 40px;
+    grid-template-rows: auto 100px auto 40px 40px auto auto 5px auto 20px 60px auto auto 40px auto 70px 50px; 
     gap: 10px;
     grid-template-areas: "portada portada portada portada portada portada portada portada"
                          "paddingleft titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones paddingright"
                          "paddingleft imagencoleccion1 imagencoleccion1 imagencoleccion2 imagencoleccion2 imagencoleccion3 imagencoleccion3 paddingright"
                          "paddingleft titulocoleccion1 titulocoleccion1 titulocoleccion2 titulocoleccion2 titulocoleccion3 titulocoleccion3 paddingright"
                          "paddingleft vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 paddingright"
-                         "paddingleft imagencalidad imagencalidad imagencalidad textocalidad textocalidad textocalidad paddingright"
+                         "paddingleft tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros paddingright"
+                         "paddingleft parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 paddingright"
                          "paddingleft vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 paddingright"
+                         "paddingleft parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 paddingright"
+                         "paddingleft vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 paddingright"
                          "paddingleft ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity paddingright"
                          "paddingleft fotosuso1 fotosuso1 fotosuso2 fotosuso2 fotosuso3 fotosuso3 paddingright"
                          "paddingleft fotosuso4 fotosuso4 fotosuso5 fotosuso5 fotosuso6 fotosuso6 paddingright"
-                         "paddingleft vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 paddingright"
+                         "paddingleft vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 paddingright"
+                         "paddingleft imagenFundacion imagenFundacion imagenFundacion textoFundacion1 textoFundacion1 textoFundacion1 paddingright"
+                         "paddingleft imagenFundacion imagenFundacion imagenFundacion textoFundacion2 textoFundacion2 textoFundacion2 paddingright"
+                         "paddingleft vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 paddingright";
 }
-        
+    
+  
+
+
 
 .portadaTablet {
     display: none;
@@ -1080,19 +1128,31 @@ h2, p{
 .contenedorMain {
     max-width: 1200px;
     grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 30px;
-    grid-template-rows: auto 100px auto 40px 250px 40px 50px 1fr 1fr 40px;
+    grid-template-rows: auto 100px auto 40px 40px auto auto 5px auto 20px 60px auto auto 40px auto 70px 50px;
     gap: 10px;
     grid-template-areas: "portada portada portada portada portada portada portada portada portada portada portada portada portada portada"
                          "paddingleft titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones paddingright"
                          "paddingleft imagencoleccion1 imagencoleccion1 imagencoleccion1 imagencoleccion1 imagencoleccion2 imagencoleccion2 imagencoleccion2 imagencoleccion2 imagencoleccion3 imagencoleccion3 imagencoleccion3 imagencoleccion3 paddingright"
                          "paddingleft titulocoleccion1 titulocoleccion1 titulocoleccion1 titulocoleccion1 titulocoleccion2 titulocoleccion2 titulocoleccion2 titulocoleccion2 titulocoleccion3 titulocoleccion3 titulocoleccion3 titulocoleccion3 paddingright"
-                         "paddingleft imagencalidad imagencalidad imagencalidad imagencalidad imagencalidad imagencalidad textocalidad textocalidad textocalidad textocalidad textocalidad textocalidad paddingright"
                          "paddingleft vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 paddingright"
+                         "paddingleft tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros tituloNosotros paddingright"
+                         "paddingleft parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 paddingright"
+                         "paddingleft vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 paddingright"
+                         "paddingleft parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 paddingright"
+                         "paddingleft vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 paddingright"
                          "paddingleft ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity paddingright"
                          "paddingleft fotosuso1 fotosuso1 fotosuso1 fotosuso2 fotosuso2 fotosuso2 fotosuso3 fotosuso3 fotosuso3 fotosuso4 fotosuso4 fotosuso4 paddingright"
                          "paddingleft fotosuso5 fotosuso5 fotosuso5 fotosuso6 fotosuso6 fotosuso6 fotosuso7 fotosuso7 fotosuso7 fotosuso8 fotosuso8 fotosuso8 paddingright"
-                         "paddingleft vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 paddingright"
+                         "paddingleft vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 paddingright"
+                         "paddingleft imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion textoFundacion1 textoFundacion1 textoFundacion1 textoFundacion1 textoFundacion1 textoFundacion1 paddingright"
+                         "paddingleft imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion textoFundacion2 textoFundacion2 textoFundacion2 textoFundacion2 textoFundacion2 textoFundacion2 paddingright"
+                         "paddingleft vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 paddingright";
 }
+
+
+
+
+
 
 .fotosdeUso7{
     display:flex;
