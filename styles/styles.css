@@ -140,7 +140,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     width: 100%;
     margin: 0 auto;
     grid-template-columns: 15px 1fr 15px;
-    grid-template-rows: auto 100px auto 80px auto 80px auto 80px 0px auto 150px 40px 50px auto 40px;
+    grid-template-rows: auto 100px auto 80px auto 80px auto 80px 0px 40px auto 15px auto 30px 150px 150px 40px 40px auto 40px;
     gap: none;
     grid-template-areas: "paddingleft portada paddingright"
                          "paddingleft titulocolecciones paddingright"
@@ -151,12 +151,18 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
                          "paddingleft imagencoleccion3 paddingright"
                          "paddingleft titulocoleccion3 paddingright"
                          "paddingleft vacio1 paddingright"
-                         "paddingleft textocalidad paddingright"
-                         "paddingleft imagencalidad paddingright"
+                         "paddingleft tituloNosotros paddingright"
+                         "paddingleft parrafoNosotros1 paddingright"
                          "paddingleft vacio2 paddingright"
+                         "paddingleft parrafoNosotros2 paddingright"
+                         "paddingleft vacio3 paddingright"
+                         "paddingleft imagencalidad paddingright"
+                         "paddingleft textocalidad paddingright"
+                         "paddingleft vacio4 paddingright"
                          "paddingleft ourCommunity paddingright"
                          "paddingleft fotosuso paddingright"
-                         "paddingleft vacio3 paddingright"
+                         "paddingleft vacio5 paddingright";
+
 }
 
 .portadaMobile {
@@ -228,10 +234,10 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 .textoCalidad {
     overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:auto;
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
     grid-area: textocalidad;
 }
 
@@ -291,6 +297,30 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 .fotosdeUso8{
     grid-area: fotosuso8;
 }
+
+.tituloNosotros{
+    grid-area: tituloNosotros;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.parrafoNosotros{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.parrafoNosotros1{
+    grid-area: parrafoNosotros1;
+}
+
+.parrafoNosotros2{
+    grid-area: parrafoNosotros2;
+}
+
 
 /*PAGINA PRODUCTO--------------------------------------------------------------------------------*/
 .containerGridsProduct{
