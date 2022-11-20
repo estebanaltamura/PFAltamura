@@ -18,6 +18,15 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
+
+.carousel-control-prev-icon{
+    background-image: url(../assets/images/iconos-y-logos/icons8-chevron-left-96.png);
+} 
+
+.carousel-control-next-icon{
+    background-image: url(../assets/images/iconos-y-logos/icons8-chevron-right-96.png);
+} 
+
 /*HEADER ------------------------------------------------------------------------------------------------*/
 
 /*BARRA SUPERIOR PARA COMUNICAR DESCUENTOS, BENEFICIOS*/
@@ -410,6 +419,15 @@ h2, p{
 
 .tituloCard1, .tituloCard2, .tituloCard3, .tituloCard4, .tituloCard5, .tituloCard6, .tituloCard7, .tituloCard8, .tituloCard9, .tituloCard10, .tituloCard11, .tituloCard12, .tituloCard13, .tituloCard14, .tituloCard15, .tituloCard16{
     font-size: 18px;
+    font-size: 9px;
+    text-decoration: none;
+    color: black;
+    margin:auto;
+}
+
+.tituloCard1:visited, .tituloCard2:visited, .tituloCard3:visited, .tituloCard4:visited, .tituloCard5:visited, .tituloCard6:visited, .tituloCard7:visited, .tituloCard8:visited, .tituloCard9:visited, .tituloCard10:visited, .tituloCard11:visited, .tituloCard12:visited, .tituloCard13:visited, .tituloCard14:visited, .tituloCard15:visited, .tituloCard16:visited{
+    font-size: 18px;
+    color:black;
     margin:auto;
 }
 
@@ -427,10 +445,7 @@ h2, p{
     grid-template-columns: 1fr;
     grid-template-rows: 165px 40px 40px;
     border: 1px solid black;
-    border-radius: 3px;
-    font-size: 9px;
-    text-decoration: none;
-    color: black;
+    border-radius: 3px;    
 }
 
 .card:visited{
