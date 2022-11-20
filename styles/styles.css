@@ -434,7 +434,7 @@ h2, p{
     margin:auto;
 }
 
-.precioCard1:visited, .precioCard2:visited, .precioCard3:visited, .precioCard4:visited, .precioCard5:visited, .precioCard6:visited, .precioCard7:visited, .precioCard8:visited, .precioCard9:visited, .precioCard10:visited, .precioCard11:visited, .precioCard12:visited, .precioCard13:visited, .precioCard14:visited, .precioCard15:visited, .precioCard16:visited{
+.precioCard1:active, .precioCard2:visited, .precioCard3:visited, .precioCard4:visited, .precioCard5:visited, .precioCard6:visited, .precioCard7:visited, .precioCard8:visited, .precioCard9:visited, .precioCard10:visited, .precioCard11:visited, .precioCard12:visited, .precioCard13:visited, .precioCard14:visited, .precioCard15:visited, .precioCard16:visited{
     color:black;
 }
 
