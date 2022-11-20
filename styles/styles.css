@@ -438,6 +438,10 @@ h2, p{
     color:black;
 }
 
+.precioCard1:active {
+    color:black;
+}
+
 
 .imagenCard1, .imagenCard2, .imagenCard3, .imagenCard4, .imagenCard5, .imagenCard6, .imagenCard7, .imagenCard8, .imagenCard9, .imagenCard10, .imagenCard11, .imagenCard12, .imagenCard13, .imagenCard14, .imagenCard15, .imagenCard16{
     width:100%;
