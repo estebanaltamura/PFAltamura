@@ -474,6 +474,14 @@ h2, p{
     color:black;
 }
 
+.card:link {
+    color:black;
+}
+
+.card:focus {
+    color:black;
+}
+
 
 .card1 {
     grid-template-areas: "foto1"
