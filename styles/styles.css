@@ -425,6 +425,11 @@ h2, p{
     margin:auto;
 }
 
+.precioCard1, .precioCard2, .precioCard3, .precioCard4, .precioCard5, .precioCard6, .precioCard7, .precioCard8, .precioCard9, .precioCard10, .precioCard11, .precioCard12, .precioCard13, .precioCard14, .precioCard15, .precioCard16{
+    font-size: 15px;
+    margin:auto;
+}
+
 .imagenCard1, .imagenCard2, .imagenCard3, .imagenCard4, .imagenCard5, .imagenCard6, .imagenCard7, .imagenCard8, .imagenCard9, .imagenCard10, .imagenCard11, .imagenCard12, .imagenCard13, .imagenCard14, .imagenCard15, .imagenCard16{
     width:100%;
 }
@@ -449,6 +454,10 @@ h2, p{
 }
 
 .card:link {
+    color:black;
+}
+
+.card:focus {
     color:black;
 }
 
