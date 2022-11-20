@@ -425,32 +425,6 @@ h2, p{
     margin:auto;
 }
 
-.tituloCard1:visited, .tituloCard2:visited, .tituloCard3:visited, .tituloCard4:visited, .tituloCard5:visited, .tituloCard6:visited, .tituloCard7:visited, .tituloCard8:visited, .tituloCard9:visited, .tituloCard10:visited, .tituloCard11:visited, .tituloCard12:visited, .tituloCard13:visited, .tituloCard14:visited, .tituloCard15:visited, .tituloCard16:visited{
-    color:black;
-}
-
-.precioCard1, .precioCard2, .precioCard3, .precioCard4, .precioCard5, .precioCard6, .precioCard7, .precioCard8, .precioCard9, .precioCard10, .precioCard11, .precioCard12, .precioCard13, .precioCard14, .precioCard15, .precioCard16{
-    font-size: 15px;
-    margin:auto;
-}
-
-.precioCard1:visited{
-    color:black;
-}
-
-.precioCard1:active {
-    color:black;
-}
-
-.precioCard1:link {
-    color:black;
-}
-
-.precioCard1:focus {
-    color:black;
-}
-
-
 .imagenCard1, .imagenCard2, .imagenCard3, .imagenCard4, .imagenCard5, .imagenCard6, .imagenCard7, .imagenCard8, .imagenCard9, .imagenCard10, .imagenCard11, .imagenCard12, .imagenCard13, .imagenCard14, .imagenCard15, .imagenCard16{
     width:100%;
 }
@@ -475,10 +449,6 @@ h2, p{
 }
 
 .card:link {
-    color:black;
-}
-
-.card:focus {
     color:black;
 }
 
