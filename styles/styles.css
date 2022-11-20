@@ -458,6 +458,10 @@ h2, p{
     color:black;
 }
 
+.card:active{
+    color:black;
+}
+
 
 .card1 {
     grid-template-areas: "foto1"
