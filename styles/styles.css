@@ -54,23 +54,31 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 }    
 
 .container-fluid{
-    padding: 0 15px;
+    margin: 0 15px;
+    padding:0;
     width: 100%;
     background-color: #fcfcfc;
 }
 
 .logoycarro{
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 126px 1fr 37px;
     grid-template-areas: "logo none carro";
-    width: calc(50% + 25px);
+    width: calc(50% + 63px);
     padding: 0px;
     margin:0px;
 }
 
 .logo{
     grid-area: logo;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    font-size: 26px;
+    color:black;
+    font-weight: 700;
     height: 50px;
+    width:126Px;
 }
 
 .carro{
@@ -426,7 +434,7 @@ h2, p{
     padding: 0 20px;
     gap: 10px;
     grid-template-columns:165px 165px;
-    grid-template-rows: 30px 245px 245px 245px 245px 245px 245px 245px 245px 50px;
+    grid-template-rows: 60px 245px 245px 245px 245px 245px 245px 245px 245px 50px;
     grid-template-areas: "titulonovedadescolecciones titulonovedadescolecciones"
         "card1 card2"
         "card3 card4"
@@ -805,7 +813,7 @@ h2, p{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    grid-template-rows: 50px 50px 60px 30px 30px 30px 50px;
+    grid-template-rows: auto 50px auto auto 30px 30px 50px;
     grid-template-areas: "titulo"
                          "vacio1"
                          "textoContactUs1"
@@ -930,8 +938,8 @@ h2, p{
 /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
 .contenedorCards {
     grid-template-columns:185px 185px 185px;
-    grid-template-rows: 30px 265px 265px 265px 265px 265px 265px 50px;
-    grid-template-areas: "titulo titulo titulo"
+    grid-template-rows: 70px 265px 265px 265px 265px 265px 265px 50px;
+    grid-template-areas: "titulonovedadescolecciones titulonovedadescolecciones titulonovedadescolecciones"
         "card1 card2 card3"
         "card4 card5 card6"
         "card7 card8 card9"
@@ -991,11 +999,14 @@ h2, p{
 @media screen and (min-width: 992px){
 /*MEDIA QUERY 3 DE HOME*/
 .logoycarro{
+    padding-right: 100px;
     display: flex;
-    width: fit-content;
+    width: 156px;
     padding: 0px;
     margin:0px;
 }
+
+
 
 .carro{
     display:none
@@ -1086,8 +1097,8 @@ h2, p{
 /*MEDIA QUERY 2 NEW ARRIVALS Y COLLECTIONS*/
 .contenedorCards {
     grid-template-columns:210px 210px 210px 210px;
-    grid-template-rows: 30px 310px 310px 310px 310px 30px;
-    grid-template-areas: "titulo titulo titulo titulo"
+    grid-template-rows: 70px 310px 310px 310px 310px 30px;
+    grid-template-areas: "titulonovedadescolecciones titulonovedadescolecciones titulonovedadescolecciones titulonovedadescolecciones"
         "card1 card2 card3 card4"
         "card5 card6 card7 card8"
         "card9 card10 card11 card12"
