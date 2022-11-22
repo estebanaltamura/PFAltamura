@@ -835,6 +835,6 @@ h2, p {
     max-width: none;
     width: 1200px;
     overflow: hidden;
-    grid-template-columns: 210px 210px 210px 210px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0px 60px 30px 0px 20px 30px auto 30PX 100px 22px 54px 20px 54px 20px 30px 20px auto 30px;
     grid-template-areas: "carrusel vacio1" "carrusel titulo" "carrusel precio" "carrusel vacio2" "carrusel reviews" "carrusel vacio3" "carrusel nopesticidas" "carrusel vacio4" "carrusel algo" "carrusel vacio5" "carrusel botonATC" "carrusel vacio6" "carrusel botonComprar" "vacio7 vacio7" "tituloDescripcion tituloDescripcion" "vacio8 vacio8" "descripcion descripcion" "vacio9 vacio9"; } }
