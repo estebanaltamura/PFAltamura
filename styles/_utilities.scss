@@ -1,0 +1,7 @@
+/*  MIXIN PRINCIPALES GRILLAS*/
+@mixin setupGrillas($display, $position, $width, $top){
+    display: $display;
+    position: $position; 
+    width: $width;
+    top: $top;
+}

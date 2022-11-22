@@ -1,4 +1,5 @@
-@import "variables";
+@import "grids";
+@import "utilities";
 
 
 /*COMENTARIOS*/
@@ -131,10 +132,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 /*CONTENEDOR GRID PARA LA SECCION MAIN DE LA HOME MOBILE*/
 .contenedorMain {
-    display: grid;
-    position: relative;
-    top: 95px;
-    width: 100%;
+    @include setupGrillas(flex, relative, 100%, 95px);
     margin: 0 auto;
     padding: 0 15px;
     grid-template-rows: $templateRowsHomeMobile;
@@ -272,12 +270,9 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 /*PAGINA PRODUCTO--------------------------------------------------------------------------------*/
 .containerGridsProduct{
-    display:grid;
-    position:relative;
-    top:95px;
+    @include setupGrillas(flex, relative, 100%, 95px);
     padding: 0 20px;
     margin: 0 auto;
-    width:100%;
     max-width: 480px;
     grid-template-columns: $templateColumnsProductosMobile;
     grid-template-rows: $templateRowsProductosMobile;
@@ -392,23 +387,19 @@ h2, p{
     text-decoration: none;
     color: black;
     margin:auto;  
+
+    &:visited{
+        color:black;
+    }
+    
+    &:active{
+        color:black;
+    }
 }
 
-.card:visited{
-    color:black;
-}
 
-.card:active{
-    color:black;
-}
 
-.card:link {
-    color:black;
-}
 
-.card:focus {
-    color:black;
-}
 
 @for $i from 1 through 16{
     .card#{$i}{
@@ -440,10 +431,7 @@ h2, p{
 
 /*PAGINA NOSOTROS------------------------------------------------------------------------------------------*/
 .mainNosotros {
-    display: grid;
-    position: relative;
-    top: 95px;
-    width: 100%;
+    @include setupGrillas(flex, relative, 100%, 95px);
     padding: 0 15px;
     max-width: 1200px;
     margin: 0 auto;
@@ -474,10 +462,7 @@ h2, p{
 
 /*PAGINA CONTACTO-------------------------------------------------------------------------------------------------*/
 .mainContacto{
-    display: grid;
-    position: relative;
-    top: 95px;
-    width: 100%;
+    @include setupGrillas(flex, relative, 100%, 95px);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -539,8 +524,12 @@ h2, p{
     grid-template-areas: $templateAreaHome768px;
 }
 
-.portadaMobile, .portadaTablet, .sliderFotosdeUso {
+.portadaMobile, .sliderFotosdeUso {
     display: none;
+}
+
+.portadaDesktop{
+    display: flex;
 }
 
 .fotosdeUso1, .fotosdeUso2, .fotosdeUso3, .fotosdeUso4{

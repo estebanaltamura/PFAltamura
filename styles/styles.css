@@ -5,6 +5,7 @@
 /*NOSOTROS*/
 /*CONTACTO*/
 /*FOOTER*/
+/*  MIXIN PRINCIPALES GRILLAS*/
 /*COMENTARIOS*/
 /*Agrupe lo mas que pude propiedades en comun a muchos elementos para reutilizarlas y solo definir las propiedades especificas de cada producto. 
 Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obligadamente para que se ve vea maquetado, asi que por motivos de visualizacion use DIVS*/
@@ -113,10 +114,10 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 /*MAIN---------------------------------------------------------------------------------------------------------------*/
 /*CONTENEDOR GRID PARA LA SECCION MAIN DE LA HOME MOBILE*/
 .contenedorMain {
-  display: grid;
+  display: flex;
   position: relative;
-  top: 95px;
   width: 100%;
+  top: 95px;
   margin: 0 auto;
   padding: 0 15px;
   grid-template-rows: auto 100px auto 80px auto 80px auto 80px 0px 40px auto 15px auto 40px 60px auto 40px auto 15px auto 15px auto 40px;
@@ -286,12 +287,12 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 /*PAGINA PRODUCTO--------------------------------------------------------------------------------*/
 .containerGridsProduct {
-  display: grid;
+  display: flex;
   position: relative;
+  width: 100%;
   top: 95px;
   padding: 0 20px;
   margin: 0 auto;
-  width: 100%;
   max-width: 480px;
   grid-template-columns: 1fr;
   grid-template-rows: auto 30px auto 30px 0px 30px 10px auto 20px 44px 10px 44px 30px 30px 30px auto 30px;
@@ -389,18 +390,10 @@ h2, p {
   text-decoration: none;
   color: black;
   margin: auto; }
-
-.card:visited {
-  color: black; }
-
-.card:active {
-  color: black; }
-
-.card:link {
-  color: black; }
-
-.card:focus {
-  color: black; }
+  .card:visited {
+    color: black; }
+  .card:active {
+    color: black; }
 
 .card1 {
   grid-template-areas: "foto1" "titulo1" "precio1";
@@ -612,10 +605,10 @@ h2, p {
 
 /*PAGINA NOSOTROS------------------------------------------------------------------------------------------*/
 .mainNosotros {
-  display: grid;
+  display: flex;
   position: relative;
-  top: 95px;
   width: 100%;
+  top: 95px;
   padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
@@ -642,10 +635,10 @@ h2, p {
 
 /*PAGINA CONTACTO-------------------------------------------------------------------------------------------------*/
 .mainContacto {
-  display: grid;
+  display: flex;
   position: relative;
-  top: 95px;
   width: 100%;
+  top: 95px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -700,8 +693,10 @@ h2, p {
     padding: 0;
     gap: 10px;
     grid-template-areas: "portada portada portada portada" "paddingleft titulocolecciones titulocolecciones paddingright" "paddingleft imagencoleccion1 imagencoleccion1 paddingright" "paddingleft titulocoleccion1 titulocoleccion1 paddingright" "paddingleft imagencoleccion2 imagencoleccion2 paddingright" "paddingleft titulocoleccion2 titulocoleccion2 paddingright" "paddingleft imagencoleccion3 imagencoleccion3 paddingright" "paddingleft titulocoleccion3 titulocoleccion3 paddingright" "paddingleft vacio1 vacio1 paddingright" "paddingleft tituloNosotrosPortada tituloNosotrosPortada paddingright" "paddingleft parrafoNosotros1 parrafoNosotros1 paddingright" "paddingleft vacio2 vacio2 paddingright" "paddingleft parrafoNosotros2 parrafoNosotros2 paddingright" "paddingleft vacio3 vacio3 paddingright" "paddingleft ourCommunity ourCommunity paddingright" "paddingleft fotosuso1 fotosuso2 paddingright" "paddingleft fotosuso3 fotosuso4 paddingright" "paddingleft vacio5 vacio5 paddingright" "paddingleft imagenFundacion textoFundacion1 paddingright" "paddingleft imagenFundacion textoFundacion2 paddingright" "paddingleft vacio4 vacio4 paddingright"; }
-  .portadaMobile, .portadaTablet, .sliderFotosdeUso {
+  .portadaMobile, .sliderFotosdeUso {
     display: none; }
+  .portadaDesktop {
+    display: flex; }
   .fotosdeUso1, .fotosdeUso2, .fotosdeUso3, .fotosdeUso4 {
     display: flex; }
   /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
