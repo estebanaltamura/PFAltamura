@@ -114,7 +114,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 /*MAIN---------------------------------------------------------------------------------------------------------------*/
 /*CONTENEDOR GRID PARA LA SECCION MAIN DE LA HOME MOBILE*/
 .contenedorMain {
-  display: flex;
+  display: grid;
   position: relative;
   width: 100%;
   top: 95px;
@@ -287,7 +287,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 /*PAGINA PRODUCTO--------------------------------------------------------------------------------*/
 .containerGridsProduct {
-  display: flex;
+  display: grid;
   position: relative;
   width: 100%;
   top: 95px;
@@ -605,7 +605,7 @@ h2, p {
 
 /*PAGINA NOSOTROS------------------------------------------------------------------------------------------*/
 .mainNosotros {
-  display: flex;
+  display: grid;
   position: relative;
   width: 100%;
   top: 95px;
@@ -635,7 +635,7 @@ h2, p {
 
 /*PAGINA CONTACTO-------------------------------------------------------------------------------------------------*/
 .mainContacto {
-  display: flex;
+  display: grid;
   position: relative;
   width: 100%;
   top: 95px;

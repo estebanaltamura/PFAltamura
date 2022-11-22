@@ -132,7 +132,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 /*CONTENEDOR GRID PARA LA SECCION MAIN DE LA HOME MOBILE*/
 .contenedorMain {
-    @include setupGrillas(flex, relative, 100%, 95px);
+    @include setupGrillas(grid, relative, 100%, 95px);
     margin: 0 auto;
     padding: 0 15px;
     grid-template-rows: $templateRowsHomeMobile;
@@ -270,7 +270,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 /*PAGINA PRODUCTO--------------------------------------------------------------------------------*/
 .containerGridsProduct{
-    @include setupGrillas(flex, relative, 100%, 95px);
+    @include setupGrillas(grid, relative, 100%, 95px);
     padding: 0 20px;
     margin: 0 auto;
     max-width: 480px;
@@ -431,7 +431,7 @@ h2, p{
 
 /*PAGINA NOSOTROS------------------------------------------------------------------------------------------*/
 .mainNosotros {
-    @include setupGrillas(flex, relative, 100%, 95px);
+    @include setupGrillas(grid, relative, 100%, 95px);
     padding: 0 15px;
     max-width: 1200px;
     margin: 0 auto;
@@ -462,7 +462,7 @@ h2, p{
 
 /*PAGINA CONTACTO-------------------------------------------------------------------------------------------------*/
 .mainContacto{
-    @include setupGrillas(flex, relative, 100%, 95px);
+    @include setupGrillas(grid, relative, 100%, 95px);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
