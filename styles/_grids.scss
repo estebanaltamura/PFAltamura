@@ -1,4 +1,4 @@
-/*GRIDS HOME*/
+/*GRIDS HOME MOBILE*/
 $templateAreaHomeMobile: "portada"
 "titulocolecciones"
 "imagencoleccion1"
@@ -25,6 +25,7 @@ $templateAreaHomeMobile: "portada"
 
 $templateRowsHomeMobile: auto 100px auto 80px auto 80px auto 80px 0px 40px auto 15px auto 40px 60px auto 40px auto 15px auto 15px auto 40px;
 
+/*GRIDS HOME 768PX*/
 $templateAreaHome768px: "portada portada portada portada"
 "paddingleft titulocolecciones titulocolecciones paddingright"
 "paddingleft imagencoleccion1 imagencoleccion1 paddingright"
@@ -50,6 +51,7 @@ $templateAreaHome768px: "portada portada portada portada"
 $templateColumnsHome768px: 15px 1fr 1fr 15px;
 $templateRowsHome768px: auto 100px auto 80px auto 80px auto 80px 0px auto auto 5px auto 40px 60px auto auto 40px auto 70px 50px;
 
+/*GRIDS HOME 992PX*/
 $templateAreaHome992px: "portada portada portada portada portada portada portada portada"
 "paddingleft titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones paddingright"
 "paddingleft imagencoleccion1 imagencoleccion1 imagencoleccion2 imagencoleccion2 imagencoleccion3 imagencoleccion3 paddingright"
@@ -71,6 +73,7 @@ $templateAreaHome992px: "portada portada portada portada portada portada portada
 $templateColumnsHome992px: 30px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
 $templateRowsHome992px: auto 100px auto 40px 40px auto auto 5px auto 20px 60px auto auto 40px auto 70px 50px; 
 
+/*GRIDS HOME 1200PX*/
 $templateAreaHome1200px: "portada portada portada portada portada portada portada portada portada portada portada portada portada portada"
 "paddingleft titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones paddingright"
 "paddingleft imagencoleccion1 imagencoleccion1 imagencoleccion1 imagencoleccion1 imagencoleccion2 imagencoleccion2 imagencoleccion2 imagencoleccion2 imagencoleccion3 imagencoleccion3 imagencoleccion3 imagencoleccion3 paddingright"
@@ -92,7 +95,7 @@ $templateAreaHome1200px: "portada portada portada portada portada portada portad
 $templateColumnsHome1200px: 30px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 30px;
 $templateRowsHome1200px: auto 100px auto 40px 40px auto auto 5px auto 20px 60px auto auto 40px auto 70px 50px;
 
-/*GRIDS PRODUCTOS*/
+/*GRIDS PRODUCTOS MOBILE*/
 $templateAreaProductosMobile: "carrusel" 
 "vacio1"
 "titulo"
@@ -114,6 +117,7 @@ $templateAreaProductosMobile: "carrusel"
 $templateColumnsProductosMobile: 1fr;
 $templateRowsProductosMobile: auto 30px auto 30px 0px 30px 10px auto 20px 44px 10px 44px 30px 30px 30px auto 30px;
 
+/*GRIDS PRODUCTOS 768PX*/
 $templateAreaProductos768px: "carrusel vacio1"
 "carrusel titulo"
 "carrusel precio"
@@ -134,6 +138,7 @@ $templateAreaProductos768px: "carrusel vacio1"
 $templateColumnsProductos768px: 1fr 1fr;
 $templateRowsProductos768px: 0px 60px 30px 0px 20px 22px auto 22PX 44px 9px 44px 20px 30px 20px auto 30px;
 
+/*GRIDS PRODUCTOS 1200PX*/
 $templateAreaProductos1200px: "carrusel vacio1"
 "carrusel titulo"
 "carrusel precio"
@@ -157,7 +162,7 @@ $templateColumnsProductos1200px: 1fr 1fr;
 $templateRowsProductos1200px: 0px 60px 30px 0px 20px 30px auto 30PX 100px 22px 54px 20px 54px 20px 30px 20px auto 30px;
 
 
-/*COLECCIONES Y NOVEDADES*/
+/*COLECCIONES Y NOVEDADES MOBILE*/
 $templateAreaColeccionesyNovedadesMobile: "titulonovedadescolecciones titulonovedadescolecciones"
 "card1 card2"
 "card3 card4"
@@ -172,6 +177,7 @@ $templateAreaColeccionesyNovedadesMobile: "titulonovedadescolecciones titulonove
 $templateColumnsColeccionesyNovedadesMobile: 165px 165px;
 $templateRowsColeccionesyNovedadesMobile: 60px 245px 245px 245px 245px 245px 245px 245px 245px 50px;
 
+/*COLECCIONES Y NOVEDADES 768PX*/
 $templateAreaColeccionesyNovedades768px: "titulonovedadescolecciones titulonovedadescolecciones titulonovedadescolecciones"
 "card1 card2 card3"
 "card4 card5 card6"
@@ -184,6 +190,7 @@ $templateAreaColeccionesyNovedades768px: "titulonovedadescolecciones titulonoved
 $templateColumnsColeccionesyNovedades768px: 185px 185px 185px;
 $templateRowsColeccionesyNovedades768px: 70px 265px 265px 265px 265px 265px 265px 50px;
 
+/*COLECCIONES Y NOVEDADES 1200PX*/
 $templateAreaColeccionesyNovedades1200px: "titulonovedadescolecciones titulonovedadescolecciones titulonovedadescolecciones titulonovedadescolecciones"
 "card1 card2 card3 card4"
 "card5 card6 card7 card8"
@@ -193,12 +200,14 @@ $templateAreaColeccionesyNovedades1200px: "titulonovedadescolecciones titulonove
 $templateColumnsColeccionesyNovedades1200px:210px 210px 210px 210px;
 $templateRowsColeccionesyNovedades1200px: 70px 310px 310px 310px 310px 30px;
 
-/*CARDS SECCION COLECCIONES Y NOVEDADES*/
+/*CARDS SECCION COLECCIONES Y NOVEDADES MOBILE*/
 $templateColumnsCardcoleccionyNovedadesMobile: 1fr; 
 $templateRowsCardcoleccionyNovedadesMobile: 165px 40px 40px;
 
+/*CARDS SECCION COLECCIONES Y NOVEDADES 768PX*/
 $templateRowsCardcoleccionyNovedades768px: 185px 40px 40px;
 
+/*CARDS SECCION COLECCIONES Y NOVEDADES 1200PX*/
 $templateRowsCardcoleccionyNovedades1200px: 210px 50px 50px;
 
 
