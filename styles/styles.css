@@ -111,13 +111,19 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
   grid-area: logo;
   background-color: transparent; }
 
-.contactenos, .mail, .twitter {
+.formatoContacto, .mail, .twitter, .contactenos {
   color: white;
   font-size: 16px;
   text-align: center; }
 
 /*SAAS EXTEND*/
-.contactenos, .mail, .twitter {
+.mail {
+  grid-area: mail; }
+
+.twitter {
+  grid-area: twitter; }
+
+.contactenos {
   grid-area: contactenos; }
 
 /*MAIN---------------------------------------------------------------------------------------------------------------*/
@@ -419,6 +425,8 @@ h2, p {
   .card:visited {
     color: black; }
   .card:active {
+    color: black; }
+  .card:hover {
     color: black; }
 
 /*SAAS FOR*/

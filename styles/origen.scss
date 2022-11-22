@@ -131,7 +131,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     background-color: transparent;
 }
 
-.contactenos{ 
+.formatoContacto{ 
     color: white;
     font-size: 16px;
     text-align: center;
@@ -139,14 +139,17 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 /*SAAS EXTEND*/
 .mail{
-    @extend .contactenos;
+    @extend .formatoContacto;
+    grid-area: mail;
 }
 
 .twitter{
-    @extend .contactenos;
+    @extend .formatoContacto;
+    grid-area: twitter;
 }
 
 .contactenos{
+    @extend .formatoContacto;
     grid-area: contactenos;
 }
 
@@ -385,6 +388,11 @@ h2, p{
     &:active{
         color:black;
     }
+
+    &:hover{
+        color:black;
+    }
+
 }
 
 /*SAAS FOR*/
