@@ -1,6 +1,7 @@
+/*SAAS IMPORTS*/
 @import "grids";
 @import "utilities";
-
+@import "variables";
 
 /*COMENTARIOS*/
 
@@ -15,9 +16,13 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 }
 
 /*GLOBALES ------------------------------------------------------------------------------------------------*/
+
+/*SAAS IF*/
+@if $elementosRedondeados == true {
 .redondeado{
     border-radius: 4px;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
 }
 
 .carousel-control-prev-icon{
@@ -46,6 +51,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/*SAAS NESTING*/
 /*MENU RESPONSIVE*/
 .navbar{
     z-index: 1;
@@ -55,14 +61,15 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     top:45px;
     padding: 0px;
     background-color: white;
+    .container-fluid{
+        margin: 0 15px;
+        padding:0;
+        width: 100%;
+        background-color: #fcfcfc;
+    }
 }    
 
-.container-fluid{
-    margin: 0 15px;
-    padding:0;
-    width: 100%;
-    background-color: #fcfcfc;
-}
+
 
 .logoycarro{
     display: grid;
@@ -75,6 +82,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 .logo{
     grid-area: logo;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     margin: 0;
     align-items: center;
@@ -113,15 +121,29 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 .logoFooter {
     margin: auto auto;
-    width: 72px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    color:white;
+    font-weight: 700;
+    height: 50px;
+    width:126Px;
     grid-area: logo;
     background-color: transparent;
 }
 
-.contactenos, .mail, .twitter{
+.contactenos{ 
     color: white;
     font-size: 16px;
     text-align: center;
+}
+
+/*SAAS EXTEND*/
+.mail{
+    @extend .contactenos;
+}
+
+.twitter{
+    @extend .contactenos;
 }
 
 .contactenos{
@@ -131,6 +153,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 /*MAIN---------------------------------------------------------------------------------------------------------------*/
 
 /*CONTENEDOR GRID PARA LA SECCION MAIN DE LA HOME MOBILE*/
+/*SAAS MIXIN*/
 .contenedorMain {
     @include setupGrillas(grid, relative, 100%, 95px);
     margin: 0 auto;
@@ -141,44 +164,31 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 
 }
 
+/*SAAS EACH DE UN MAP*/
+@each $class, $area in $elementosHomeMobile{
+    .#{$class}{
+        grid-area: #{$area}
+    }
+}
+
 .portadaMobile {
     display: flex;
     width: 100%;
-    grid-area: portada;
 }
 
 .portadaTablet, .portadaDesktop {
     display:none;
-    width: 100%;
-    
-}
-.portadaTablet{
-    grid-area: portada;
+    width: 100%;   
 }
 
-.portadaDesktop {
-    grid-area: portada;
-}
+
 
 .titulocolecciones {
     font-size: 40px;
     text-align: center;
     margin: 40px auto;
-    grid-area: titulocolecciones;
 }
-
-@for $i from 1 through 3{
-    .titulocoleccion#{$i}{
-        grid-area: titulocoleccion#{$i};
-    }
-}
-
-@for $i from 1 through 3{
-    .imagencoleccion#{$i}{
-        grid-area: imagencoleccion#{$i}; 
-    }
-}
-
+  
 .coleccionesImagenes{
     width: 100%;
     max-width: 450px;
@@ -199,7 +209,6 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 }
 
 .tituloNosotrosPortada{
-    grid-area: tituloNosotrosPortada;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -213,26 +222,17 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
     text-align: center;
 }
 
-.parrafoNosotros1{
-    grid-area: parrafoNosotros1;
-}
-
-.parrafoNosotros2{
-    grid-area: parrafoNosotros2;
-}
-
 .ourCommunity{
     margin: auto;
-    grid-area: ourCommunity;
 }
 
 .sliderFotosdeUso {
     display:flex;
     font-size: 24px;
     width:100%;
-    grid-area: fotosuso;
 }
 
+/*SAAS FOR*/
 @for $i from 1 through 8{
 .fotosdeUso#{$i}{
     display:none;
@@ -240,23 +240,11 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 }
 }
 
-@for $i from 1 through 8{
-    .fotosdeUso#{$i}{
-    grid-area: fotosuso#{$i}};
-}
-
 .imagenFundacion{
     display:block;
     margin:auto;
     font-size: 24px;
     width: 250px;
-    grid-area: imagenFundacion;
-}
-
-@for $i from 1 through 2{
-    .textoFundacion#{$i}{
-        grid-area: textoFundacion#{$i};
-    }
 }
 
 .textoFundacion1, .textoFundacion2 {
@@ -269,6 +257,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 }
 
 /*PAGINA PRODUCTO--------------------------------------------------------------------------------*/
+/*SAAS MIXIN*/
 .containerGridsProduct{
     @include setupGrillas(grid, relative, 100%, 95px);
     padding: 0 20px;
@@ -380,14 +369,15 @@ h2, p{
 .card {
     display: grid;
     width:100%;
-    grid-template-columns: $templateColumnsCardcoleccionyNovedadesMobile;
-    grid-template-rows: $templateRowsCardcoleccionyNovedadesMobile;
     border: 1px solid black;
     border-radius: 3px;  
     text-decoration: none;
     color: black;
     margin:auto;  
-
+    grid-template-columns: $templateColumnsCardcoleccionyNovedadesMobile;
+    grid-template-rows: $templateRowsCardcoleccionyNovedadesMobile;
+    
+    /*SAAS USO DE &*/
     &:visited{
         color:black;
     }
@@ -397,10 +387,7 @@ h2, p{
     }
 }
 
-
-
-
-
+/*SAAS FOR*/
 @for $i from 1 through 16{
     .card#{$i}{
         grid-template-areas: "foto#{$i}"
@@ -410,18 +397,21 @@ h2, p{
     }
 } 
 
-
+/*SAAS FOR*/
 @for $i from 1 through 16{
 .imagenCard#{$i}{
     grid-area: foto#{$i};
 }
 }
+
+/*SAAS FOR*/
 @for $i from 1 through 16{
 .tituloCard#{$i}{
     grid-area: titulo#{$i};
 }
 }
 
+/*SAAS FOR*/
 @for $i from 1 through 16{
 .precioCard#{$i}{
     grid-area: precio#{$i};
@@ -430,6 +420,7 @@ h2, p{
 
 
 /*PAGINA NOSOTROS------------------------------------------------------------------------------------------*/
+/*SAAS MIXIN*/
 .mainNosotros {
     @include setupGrillas(grid, relative, 100%, 95px);
     padding: 0 15px;
@@ -461,6 +452,7 @@ h2, p{
 }
 
 /*PAGINA CONTACTO-------------------------------------------------------------------------------------------------*/
+/*SAAS MIXIN*/
 .mainContacto{
     @include setupGrillas(grid, relative, 100%, 95px);
     max-width: 1200px;
@@ -487,6 +479,7 @@ h2, p{
     margin: 0 auto;
 }
 
+/*SAAS FOR*/
 @for $i from 1 through 4{
     .textoContacto#{$i}{
         grid-area:textoContactUs#{$i};
@@ -532,10 +525,14 @@ h2, p{
     display: flex;
 }
 
-.fotosdeUso1, .fotosdeUso2, .fotosdeUso3, .fotosdeUso4{
-    display:flex;
+/*SAAS FOR*/
+@for $i from 1 through 4{
+    .fotosdeUso#{$i}{
+        display:flex;
+        width:100%;
+    }
 }
-    
+
 /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
 .contenedorCards {
     grid-template-columns: $templateColumnsColeccionesyNovedades768px;
