@@ -1,4 +1,3 @@
-/*SAAS IMPORTS*/
 /*GRIDS HOME MOBILE*/
 /*GRIDS HOME 768PX*/
 /*GRIDS HOME 992PX*/
@@ -15,17 +14,12 @@
 /*NOSOTROS*/
 /*CONTACTO*/
 /*FOOTER*/
-/*  MIXIN PRINCIPALES GRILLAS*/
-/*COMENTARIOS*/
-/*Agrupe lo mas que pude propiedades en comun a muchos elementos para reutilizarlas y solo definir las propiedades especificas de cada producto. 
-Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obligadamente para que se ve vea maquetado, asi que por motivos de visualizacion use DIVS*/
 /*RESETEO DEL NAVEGADOR*/
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box; }
 
-/*GLOBALES ------------------------------------------------------------------------------------------------*/
 /*SAAS IF*/
 .redondeado {
   border-radius: 4px;
@@ -37,6 +31,7 @@ Use muchas veces DIV donde deberia ir IMG por que le tenia que dar un source obl
 .carousel-control-next-icon {
   background-image: url(../assets/images/iconos-y-logos/icons8-chevron-right-96.png); }
 
+/*  MIXIN PRINCIPALES GRILLAS*/
 /*HEADER ------------------------------------------------------------------------------------------------*/
 /*BARRA SUPERIOR PARA COMUNICAR DESCUENTOS, BENEFICIOS*/
 .barramensaje {
