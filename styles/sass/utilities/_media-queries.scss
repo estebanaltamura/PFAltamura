@@ -1,5 +1,31 @@
 /*-------------------------------------------------------------------MEDIA QUERIES-----------------------------------------------------------*/
+    @media screen and (max-width: 300px){
+    
+    /*PORTADA HOME*/
+    .logoycarro{
+        display: grid;
+        grid-template-columns: 1fr 37px;
+        grid-template-areas: "none carro";
+        width: calc(50%);
+        padding: 0px;
+        margin:0px;
+    }
+
+    .logo {
+        display: none;
+    }   
+    }
+    
     @media screen and (min-width: 375px){
+    
+    /*PORTADA HOME*/
+    .portadaMobile {
+        display: none;
+    }
+
+    .portada375{
+        display:flex
+    }
      /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
      .contenedorCards {
         grid-template-columns: $templateColumnsColeccionesyNovedades375px;
@@ -42,7 +68,7 @@
         grid-template-areas: $templateAreaHome768px;
     }
     
-    .portadaMobile, .sliderFotosdeUso {
+    .portadaMobile, .portada375, .sliderFotosdeUso {
         display: none;
     }
     
