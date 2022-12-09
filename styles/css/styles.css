@@ -37,7 +37,7 @@
 /*HEADER ------------------------------------------------------------------------------------------------*/
 /*BARRA SUPERIOR PARA COMUNICAR DESCUENTOS, BENEFICIOS*/
 .barramensaje {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   position: fixed;
   width: 100%;
@@ -53,7 +53,7 @@
 /*SAAS NESTING*/
 /*MENU RESPONSIVE*/
 .navbar {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   position: fixed;
   width: 100%;
