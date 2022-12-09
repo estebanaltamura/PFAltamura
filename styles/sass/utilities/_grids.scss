@@ -163,7 +163,30 @@ $templateRowsProductos1200px: 0px 60px 30px 0px 20px 30px auto 30PX 100px 22px 5
 
 
 /*COLECCIONES Y NOVEDADES MOBILE*/
-$templateAreaColeccionesyNovedadesMobile: "titulonovedadescolecciones titulonovedadescolecciones"
+$templateAreaColeccionesyNovedadesMobile: "titulonovedadescolecciones"
+"card1"
+"card2"
+"card3" 
+"card4"
+"card5" 
+"card6"
+"card7" 
+"card8"
+"card9" 
+"card10"
+"card11"  
+"card12"
+"card13"
+"card14"
+"card15" 
+"card16"
+"vacio1";
+
+$templateColumnsColeccionesyNovedadesMobile: 230px;
+$templateRowsColeccionesyNovedadesMobile: 60px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 50px;
+
+/*COLECCIONES Y NOVEDADES 390*/
+$templateAreaColeccionesyNovedades375px: "titulonovedadescolecciones titulonovedadescolecciones"
 "card1 card2"
 "card3 card4"
 "card5 card6"
@@ -174,8 +197,9 @@ $templateAreaColeccionesyNovedadesMobile: "titulonovedadescolecciones titulonove
 "card15 card16"
 "vacio1 vacio1";
 
-$templateColumnsColeccionesyNovedadesMobile: 165px 165px;
-$templateRowsColeccionesyNovedadesMobile: 60px 245px 245px 245px 245px 245px 245px 245px 245px 50px;
+$templateColumnsColeccionesyNovedades375px: 160px 160px;
+$templateRowsColeccionesyNovedades375px: 60px 238px 238px 238px 238px 238px 238px 238px 238px 50px;
+
 
 /*COLECCIONES Y NOVEDADES 768PX*/
 $templateAreaColeccionesyNovedades768px: "titulonovedadescolecciones titulonovedadescolecciones titulonovedadescolecciones"
@@ -202,7 +226,10 @@ $templateRowsColeccionesyNovedades1200px: 70px 310px 310px 310px 310px 30px;
 
 /*CARDS SECCION COLECCIONES Y NOVEDADES MOBILE*/
 $templateColumnsCardcoleccionyNovedadesMobile: 1fr; 
-$templateRowsCardcoleccionyNovedadesMobile: 165px 40px 40px;
+$templateRowsCardcoleccionyNovedadesMobile: 228px 40px 40px;
+
+/*CARDS SECCION COLECCIONES Y NOVEDADES 390*/
+$templateRowsCardcoleccionyNovedades375px: 158px 40px 40px;
 
 /*CARDS SECCION COLECCIONES Y NOVEDADES 768PX*/
 $templateRowsCardcoleccionyNovedades768px: 185px 40px 40px;

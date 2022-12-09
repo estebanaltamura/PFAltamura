@@ -6,9 +6,11 @@
 /*GRIDS PRODUCTOS 768PX*/
 /*GRIDS PRODUCTOS 1200PX*/
 /*COLECCIONES Y NOVEDADES MOBILE*/
+/*COLECCIONES Y NOVEDADES 390*/
 /*COLECCIONES Y NOVEDADES 768PX*/
 /*COLECCIONES Y NOVEDADES 1200PX*/
 /*CARDS SECCION COLECCIONES Y NOVEDADES MOBILE*/
+/*CARDS SECCION COLECCIONES Y NOVEDADES 390*/
 /*CARDS SECCION COLECCIONES Y NOVEDADES 768PX*/
 /*CARDS SECCION COLECCIONES Y NOVEDADES 1200PX*/
 /*NOSOTROS*/
@@ -392,13 +394,13 @@ h2, p {
   display: grid;
   position: relative;
   top: 95px;
-  width: 380px;
+  width: fit-content;
   margin: 0 auto;
   padding: 0 20px;
-  gap: 10px;
-  grid-template-columns: 165px 165px;
-  grid-template-rows: 60px 245px 245px 245px 245px 245px 245px 245px 245px 50px;
-  grid-template-areas: "titulonovedadescolecciones titulonovedadescolecciones" "card1 card2" "card3 card4" "card5 card6" "card7 card8" "card9 card10" "card11 card12" "card13 card14" "card15 card16" "vacio1 vacio1"; }
+  gap: 20px;
+  grid-template-columns: 230px;
+  grid-template-rows: 60px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 308px 50px;
+  grid-template-areas: "titulonovedadescolecciones" "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8" "card9" "card10" "card11" "card12" "card13" "card14" "card15" "card16" "vacio1"; }
 
 .titulonovedadescolecciones {
   grid-area: titulonovedadescolecciones;
@@ -424,7 +426,7 @@ h2, p {
   color: black;
   margin: auto;
   grid-template-columns: 1fr;
-  grid-template-rows: 165px 40px 40px;
+  grid-template-rows: 228px 40px 40px;
   /*SAAS USO DE &*/ }
   .card:visited {
     color: black; }
@@ -718,6 +720,16 @@ h2, p {
   grid-area: textoContactUs4; }
 
 /*-------------------------------------------------------------------MEDIA QUERIES-----------------------------------------------------------*/
+@media screen and (min-width: 375px) {
+  /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
+  .contenedorCards {
+    grid-template-columns: 160px 160px;
+    grid-template-rows: 60px 238px 238px 238px 238px 238px 238px 238px 238px 50px;
+    grid-template-areas: "titulonovedadescolecciones titulonovedadescolecciones" "card1 card2" "card3 card4" "card5 card6" "card7 card8" "card9 card10" "card11 card12" "card13 card14" "card15 card16" "vacio1 vacio1";
+    gap: 15px; }
+  .card {
+    grid-template-rows: 158px 40px 40px; } }
+
 @media screen and (min-width: 576px) {
   /*BARRA SUPERIOR PARA COMUNICAR DESCUENTOS, BENEFICIOS*/
   .barramensaje {
@@ -755,7 +767,7 @@ h2, p {
   .fotosdeUso4 {
     display: flex;
     width: 100%; }
-  /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
+  /*MEDIA QUERY 2 NEW ARRIVALS Y COLLECTIONS*/
   .contenedorCards {
     grid-template-columns: 185px 185px 185px;
     grid-template-rows: 70px 265px 265px 265px 265px 265px 265px 50px;
@@ -816,7 +828,7 @@ h2, p {
     grid-template-areas: "portada portada portada portada portada portada portada portada portada portada portada portada portada portada" "paddingleft titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones titulocolecciones paddingright" "paddingleft imagencoleccion1 imagencoleccion1 imagencoleccion1 imagencoleccion1 imagencoleccion2 imagencoleccion2 imagencoleccion2 imagencoleccion2 imagencoleccion3 imagencoleccion3 imagencoleccion3 imagencoleccion3 paddingright" "paddingleft titulocoleccion1 titulocoleccion1 titulocoleccion1 titulocoleccion1 titulocoleccion2 titulocoleccion2 titulocoleccion2 titulocoleccion2 titulocoleccion3 titulocoleccion3 titulocoleccion3 titulocoleccion3 paddingright" "paddingleft vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 vacio1 paddingright" "paddingleft tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada tituloNosotrosPortada paddingright" "paddingleft parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 parrafoNosotros1 paddingright" "paddingleft vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 vacio2 paddingright" "paddingleft parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 parrafoNosotros2 paddingright" "paddingleft vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 vacio3 paddingright" "paddingleft ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity ourCommunity paddingright" "paddingleft fotosuso1 fotosuso1 fotosuso1 fotosuso2 fotosuso2 fotosuso2 fotosuso3 fotosuso3 fotosuso3 fotosuso4 fotosuso4 fotosuso4 paddingright" "paddingleft fotosuso5 fotosuso5 fotosuso5 fotosuso6 fotosuso6 fotosuso6 fotosuso7 fotosuso7 fotosuso7 fotosuso8 fotosuso8 fotosuso8 paddingright" "paddingleft vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 vacio4 paddingright" "paddingleft imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion textoFundacion1 textoFundacion1 textoFundacion1 textoFundacion1 textoFundacion1 textoFundacion1 paddingright" "paddingleft imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion imagenFundacion textoFundacion2 textoFundacion2 textoFundacion2 textoFundacion2 textoFundacion2 textoFundacion2 paddingright" "paddingleft vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 vacio5 paddingright"; }
   .fotosdeUso7, .fotosdeUso8 {
     display: flex; }
-  /*MEDIA QUERY 2 NEW ARRIVALS Y COLLECTIONS*/
+  /*MEDIA QUERY 3 NEW ARRIVALS Y COLLECTIONS*/
   .contenedorCards {
     grid-template-columns: 210px 210px 210px 210px;
     grid-template-rows: 70px 310px 310px 310px 310px 30px;

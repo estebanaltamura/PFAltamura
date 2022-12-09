@@ -1,6 +1,19 @@
 /*-------------------------------------------------------------------MEDIA QUERIES-----------------------------------------------------------*/
+    @media screen and (min-width: 375px){
+     /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
+     .contenedorCards {
+        grid-template-columns: $templateColumnsColeccionesyNovedades375px;
+        grid-template-rows: $templateRowsColeccionesyNovedades375px;
+        grid-template-areas: $templateAreaColeccionesyNovedades375px;
+        gap:15px;
+    }
     
-@media screen and (min-width: 576px){
+    .card {
+        grid-template-rows: $templateRowsCardcoleccionyNovedades375px;
+    }
+    }
+
+    @media screen and (min-width: 576px){
     /*BARRA SUPERIOR PARA COMUNICAR DESCUENTOS, BENEFICIOS*/
     .barramensaje {
         font-size: 16px;
@@ -45,7 +58,7 @@
         }
     }
     
-    /*MEDIA QUERY 1 NEW ARRIVALS Y COLLECTIONS*/
+    /*MEDIA QUERY 2 NEW ARRIVALS Y COLLECTIONS*/
     .contenedorCards {
         grid-template-columns: $templateColumnsColeccionesyNovedades768px;
         grid-template-rows: $templateRowsColeccionesyNovedades768px;
@@ -137,7 +150,7 @@
         display:flex;
     }
             
-    /*MEDIA QUERY 2 NEW ARRIVALS Y COLLECTIONS*/
+    /*MEDIA QUERY 3 NEW ARRIVALS Y COLLECTIONS*/
     .contenedorCards {
         grid-template-columns:$templateColumnsColeccionesyNovedades1200px;
         grid-template-rows: $templateRowsColeccionesyNovedades1200px;
